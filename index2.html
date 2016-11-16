@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="app">
+    <head>
+        <title>AngularJS: Série de Bolso (parte 2)</title>
+    </head>
+    <body ng-controller="MeuController">
+
+        <h1 ng-controller="InnerController">Hello {{Amigo}}, conhece {{Compadre}}?</h1>
+
+        <script src="scripts/angular.js"></script>
+        <script>
+            var app = angular.module('app', []);
+            app.controller('MeuController', ['$scope', function($scope){
+                $scope.Amigo = "Diego Doná";
+                $scope.Compadre = "Beltrano";
+            }]);
+            app.controller('InnerController', ['$scope', function($scope){
+                $scope.Amigo = "Zé";
+            }])
+        </script>
+    </body>
+</html>

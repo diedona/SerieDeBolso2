@@ -1,0 +1,21 @@
+
+<!doctype html>
+<html ng-app="app">
+    <head>
+        <title>AngularJS: Série de Bolso (parte 2)</title>
+    </head>
+    <body ng-controller="MeuController as meuCtrl">
+
+        <h1>Olá {{meuCtrl.Amigo}}!</h1>
+
+        <input type="text" ng-model="meuCtrl.Amigo" />
+
+        <br/>
+
+        <button type="button" ng-click="meuCtrl.setAmigo()">Clique</button>
+
+        <script src="scripts/angular.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controller.js"></script>
+    </body>
+</html>
